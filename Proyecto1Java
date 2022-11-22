@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main {
+
+public static void main(String[] args) {
+    Coche miCoche = new Coche();
+    miCoche.aumentarPuertas();
+    System.out.println("El cocho tiene "+ miCoche.puertas + " puertas.");
+
+}
+}
+
+class Coche{
+        public int puertas=3;
+        public void aumentarPuertas(){
+            this.puertas++;
+        }
+}

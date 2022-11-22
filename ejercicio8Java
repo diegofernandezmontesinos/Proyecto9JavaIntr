@@ -1,0 +1,60 @@
+public class Main {
+    public static void main(String[] args) {
+
+     Persona mipersona = new Persona();
+     mipersona.establecerEdad();
+     mipersona.establecerNombre();
+     mipersona.establecerTelefono();
+     mipersona.dimeEdad();
+     mipersona.dimeNombre();
+     mipersona.dimeTelefono();
+
+     System.out.println(mipersona.dimeEdad());
+     System.out.println(mipersona.dimeNombre());
+     System.out.println(mipersona.dimeTelefono());;
+    }
+}
+
+class Persona {
+   private int edad;
+   private String nombre;
+   private int telefono;
+
+
+
+    public Persona(){
+        edad= 30;
+        nombre= "Diego";
+        telefono = 123456789;
+    }
+
+
+    //metodos setter
+    public void establecerEdad(){
+        edad = 29;
+    }
+    public void establecerNombre(){
+        nombre = "Fulanito";
+    }
+    public void establecerTelefono(){
+        telefono = 987654321;
+    }
+
+    //metodos getter
+    public String dimeEdad(){  //getter
+
+        return "La edad es " + edad;
+    }
+
+    public String dimeNombre(){ //getter
+
+        return "Tu nombre es " + nombre;
+    }
+
+    public String dimeTelefono(){   //getter
+
+        return "Tu teléfono es " + telefono;
+    }
+
+
+}
